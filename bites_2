@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    unsigned int x, y, z, m=0;
+    scanf("%d", &x);
+    y = x;
+    while (y > 0) {z = y&5; if(z==5) m += 1; y=y>>1;};
+    printf("%d", m);
+    return 0;
+
+
+}
