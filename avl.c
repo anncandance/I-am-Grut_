@@ -91,8 +91,7 @@ void correct2(struct AVLNode **root, struct AVLNode **q){
     }
 }
 
-//всиавляет,но не балансирует, rebalance должна вызываться после каждой вставки элемента из insert
-//и приводить в порядок все дерево
+//починить за 10 мин не получилось, соре, insert мертв
 
 struct AVLNode* insert(int k, int d, struct AVLNode *q) {
     struct AVLNode *node = (struct AVLNode *) (malloc(sizeof(struct AVLNode)));
